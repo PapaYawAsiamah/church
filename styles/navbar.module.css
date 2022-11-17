@@ -1,0 +1,402 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+.name{
+font-size: 2vw;
+line-height: 1;
+font-family:  'Poiret One', cursive ;
+margin-top: 10px;
+}
+.logo{
+    max-width: 40px;
+    margin-top: 5px;
+    
+}
+.ident{
+    display: flex;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+   
+}
+@media screen and (min-width: 511px)  {
+    .logo{
+        margin-top: 4px;
+        max-width: 60px;
+    }
+    
+}
+@media screen and (min-width: 895px)  {
+    .logo{
+        margin-top: 9px;
+        max-width: 80px;
+    }
+    
+} */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColoor);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.logo {
+  max-width: 60px;
+  height: 70px;
+  margin-top: 10px;
+}
+.head {
+  display: flex;
+}
+.name {
+  font-family: "Poiret One", cursive;
+}
+#nav a {
+  margin: 0 2rem;
+  color: var(--textColoor);
+  text-decoration: none;
+}
+#nav a:hover {
+  color: var(--secondaryColor);
+}
+
+.header .navBtn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColoor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 1024px) {
+  .header .navBtn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+    z-index: 1;
+    transform: translateY(-100vh);
+  }
+
+  .header .responsiveNav {
+    transform: none;
+  }
+
+  nav .navCloseBtn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  #nav a {
+    font-size: 1.5rem;
+  }
+
+  
+}
+/* styling banner */
+.mainImage {
+  position: relative;
+  background: url(../public/banner.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  z-index: -1;
+ 
+  
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2vw;
+}
+/*styling about Page*/
+.Aboutsection {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  margin-top: 0;
+ 
+
+}
+.AboutContainer {
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 0px;
+}
+.AboutContentSection {
+  float: left;
+  width: 55%;
+}
+.ImageSection {
+  float: right;
+  width: 40%;
+ 
+}
+.ImageSection img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  filter: brightness(50%);
+  /* z-index: -1; */
+}
+.AboutContentSection .AboutTitle {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.AboutContentSection .AboutContent h3 {
+  margin-top: 20px;
+  color: #5d5d5d;
+  font-size: 21px;
+}
+.AboutContentSection .AboutContent p {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.AboutContentSection .AboutContent .AboutBtn {
+  margin-top: 30px;
+}
+.AboutContentSection .AboutContent .AboutBtn button {
+  background-color: #3d3d3d;
+  padding: 12px 40px;
+  text-align: none;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+.AboutContentSection .AboutContent .AboutBtn button:hover {
+  background-color: #a52a2a;
+  color: #fff;
+}
+.AboutContentSection .social {
+  margin: 40px 40px;
+}
+.AboutContentSection .social a {
+  color: #a52a2a;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+.AboutContentSection .social a:hover {
+  color: #3d3d3d;
+}
+@media screen and (max-width: 768px) {
+  .AboutContainer {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    padding: 30px;
+  }
+  .AboutContentSection {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .ImageSection {
+    float: none;
+    width: 100%;
+    z-index: -1;
+  }
+  .ImageSection img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px;
+    
+  }
+  .AboutContentSection .AboutTitle {
+    text-align: center;
+    font-size: 19px;
+  }
+  .AboutContentSection .AboutContent .AboutBtn {
+    text-align: center;
+  }
+  .AboutContentSection .AboutContent .AboutBtn a {
+    padding: 9px 30px;
+  }
+  .AboutContentSection .social{
+    text-align: center;
+  }
+  .LocationHeader{
+    text-align: center;
+    font-size: 19px;
+}
+  
+}
+/* styling location */
+.MapContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #ddd;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 0;
+  
+}
+.LocationHeader{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 0;
+}
+.map{
+    width: 80%;
+    height: 500px;
+}
+/* styling contact us page */
+.ConHeader{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 0;
+    text-align: center;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white ;
+    background-size: cover;
+}
+.contact .ConContent{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .ConContent p{
+  font-weight: 300;
+}
+.ConContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.ConContainer .ContactInfo{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+}
+.ConContainer .ContactInfo .box{ 
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    
+}
+.ConContainer .ContactInfo .box .icon{ 
+    min-width: 60px;
+    height: 60px;
+    background: #fff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.ConContainer .ContactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+    line-height: 19px;
+
+}
+.ConContainer .ContactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+    margin: 0;
+    text-align: left;
+}
+.Form{
+    width: 80%;
+    padding: 40px;
+    background: #fff;
+}
+.Form h2{
+    font-size: 30px ;
+    color: #333;
+    font-weight: 500;
+}
+.Form .Input{
+position: relative;
+width: 100%;
+margin-top: 10px;
+}
+.Form .Input input,
+.Form .Input textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.Form .Input input[type ="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 991px) {
+    .contact{
+        padding: 50px;
+    }
+    .ConContainer{
+        flex-direction: column;
+    }
+    .ConContainer .ContactInfo{
+        margin-bottom: 40px;
+    }
+    .ConContainer .ContactInfo .Form{ 
+        width: 100%;
+    }
+    .container {
+      font-size: 4vw;
+    }
+}
+
+/* .carouselImage img{
+  width: 100%;
+  height: auto;
+} */
+.ImageSec{
+  display: flex;
+}

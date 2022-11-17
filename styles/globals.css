@@ -4,6 +4,16 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;  
+   
+}
+:root{
+  --mainColor: white;
+  --mainColorLight: grey;
+  --secondaryColor: grey;
+  --textColoor: black;
+
+
 }
 
 a {
@@ -16,11 +26,11 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
+  /* html {
     color-scheme: dark;
-  }
+  } */
   body {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
   }
 }
